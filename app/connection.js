@@ -4,8 +4,9 @@ function connectDB(){
   console.log("connecting..")
 
   const atlasURL=require("../config/keys")
+  console.log(atlasURL)
 
-    mongoose.connect(atlasURL, //test is the name of database
+    mongoose.connect(`${atlasURL}`, //test is the name of database
     {
       useUnifiedTopology: true,
       useNewUrlParser: true,
